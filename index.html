@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Письмо в цель — агентство email-маркетинга</title>
+<meta name="description" content="Увеличиваем повторные продажи с помощью email-рассылок: стратегия, дизайн писем, автоматизация, аналитика.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23FFB23E'/><path d='M14 22h36v22H14z' fill='none' stroke='%23161a2b' stroke-width='4'/><path d='M14 22l18 13 18-13' fill='none' stroke='%23161a2b' stroke-width='4'/></svg>">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a href="#top" class="logo"><span class="logo__mark">✉</span> Письмо в цель</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#calc">Рассчитать выручку</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#process">Как работаем</a>
+      <a href="#team">Команда</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a href="#lead" class="btn btn--sm">Оставить заявку</a>
+    <button class="nav__burger" aria-label="Меню" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero__in">
+    <div>
+      <p class="tag">✦ Актуально для любого бизнеса</p>
+      <h1>Увеличим повторные продажи <span class="accent">в 2 раза</span> на вашей текущей базе</h1>
+      <p class="lead">Email — канал с одной из самых высоких окупаемостей в digital-маркетинге. Выстроим стратегию, сделаем письма и настроим автоматические цепочки под ключ.</p>
+      <div class="hero__cta">
+        <a href="#lead" class="btn">Записаться на бесплатную консультацию</a>
+        <a href="#calc" class="btn btn--ghost">Посчитать выгоду</a>
+      </div>
+    </div>
+    <div class="hero__card" aria-hidden="true">
+      <div class="mail">
+        <div class="mail__row"><b>Тема:</b> Ваша скидка ждёт вас 🎁</div>
+        <div class="mail__bar"><span style="width:62%"></span></div>
+        <div class="mail__stats">
+          <div><b>62%</b><small>открытий</small></div>
+          <div><b>14%</b><small>кликов</small></div>
+          <div><b>+38%</b><small>к выручке</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <h2>Выручка с текущих клиентов — с помощью писем</h2>
+    <div class="stats__grid">
+      <div class="stat"><b>до 5×</b><span>рост выручки email-канала при грамотной стратегии</span></div>
+      <div class="stat"><b>120+</b><span>проектов запустили за последние годы</span></div>
+      <div class="stat"><b>40%</b><span>средняя открываемость писем у наших клиентов</span></div>
+      <div class="stat"><b>14 дней</b><span>от брифа до первой рассылки</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="calc" id="calc">
+  <div class="wrap calc__in">
+    <div>
+      <h2>Рассчитайте, сколько может приносить email</h2>
+      <p class="muted">Расчёт приблизительный и основан на средних показателях рынка. Точную оценку для вашего бизнеса даст менеджер.</p>
+      <form class="calc__form" id="calcForm">
+        <label>Писем в месяц<input type="number" id="cSent" value="20000" min="0"></label>
+        <label>Средний чек, ₽<input type="number" id="cCheck" value="3000" min="0"></label>
+        <label>Отрасль
+          <select id="cInd">
+            <option value="0.05">Торговля и e-commerce</option>
+            <option value="0.04">Образование</option>
+            <option value="0.035">Услуги и сервис</option>
+            <option value="0.025">IT и B2B</option>
+            <option value="0.04">Туризм и HoReCa</option>
+          </select>
+        </label>
+      </form>
+    </div>
+    <div class="calc__out">
+      <div><small>Открытий в месяц</small><b id="oOpen">—</b></div>
+      <div><small>Кликов в месяц</small><b id="oClick">—</b></div>
+      <div class="big"><small>Потенциальная выручка в месяц</small><b id="oRev">—</b></div>
+      <a href="#lead" class="btn">Получить точный расчёт</a>
+    </div>
+  </div>
+</section>
+
+<section class="cases" id="cases">
+  <div class="wrap">
+    <h2>Кейсы</h2>
+    <p class="muted">Названия клиентов скрыты по соглашению о конфиденциальности.</p>
+    <div class="cases__grid">
+      <article class="case">
+        <span class="case__niche">Сеть отелей</span>
+        <h3>Автоцепочки после бронирования</h3>
+        <ul><li><b>81%</b> открываемость</li><li><b>2%</b> конверсия в повторное бронирование</li><li><b>+500 000 ₽</b> в месяц</li></ul>
+      </article>
+      <article class="case">
+        <span class="case__niche">Онлайн-школа</span>
+        <h3>Снизили стоимость привлечения</h3>
+        <ul><li>доля маркетинга <b>с 50% до 11%</b> выручки</li><li>открываемость <b>×2</b></li><li><b>+4,5 млн ₽</b> в месяц</li></ul>
+      </article>
+      <article class="case">
+        <span class="case__niche">Фитнес-клуб</span>
+        <h3>Продажи в несезон</h3>
+        <ul><li><b>1,3 млн ₽</b> выручки за лето</li><li><b>5%</b> посетителей сайта стали подписчиками</li></ul>
+      </article>
+      <article class="case">
+        <span class="case__niche">Косметика</span>
+        <h3>Реактивация «спящих»</h3>
+        <ul><li>вернули <b>500</b> подписчиков, не открывавших письма полгода</li><li>чистая база без жалоб</li></ul>
+      </article>
+      <article class="case">
+        <span class="case__niche">Сеть пекарен</span>
+        <h3>Редизайн писем</h3>
+        <ul><li>конверсия в переходы <b>×2</b></li><li>единый фирменный шаблон</li></ul>
+      </article>
+      <article class="case">
+        <span class="case__niche">B2B-производство</span>
+        <h3>Регулярная коммуникация</h3>
+        <ul><li>конверсия в заявку <b>×2</b></li><li>прогретый домен и настроенная аутентификация</li></ul>
+      </article>
+    </div>
+    <p class="claim">Работа с базой контактов в&nbsp;100% случаев приносит больше. В&nbsp;любой нише.</p>
+  </div>
+</section>
+
+<section class="industries">
+  <div class="wrap">
+    <h2>Работаем с любым бизнесом</h2>
+    <div class="chips">
+      <span>IT</span><span>Торговля</span><span>Производство</span><span>Туризм</span><span>Искусство</span><span>Образование</span><span>Медицина</span><span>HoReCa</span>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <h2>Как мы работаем</h2>
+    <ol class="steps">
+      <li><b>Аудит</b><span>Разбираем базу, текущие рассылки, доставляемость и аутентификацию домена (SPF, DKIM, DMARC).</span></li>
+      <li><b>Стратегия</b><span>Сегменты, контент-план, триггерные цепочки и KPI.</span></li>
+      <li><b>Дизайн и тексты</b><span>Адаптивные шаблоны в вашем фирменном стиле и продающие тексты.</span></li>
+      <li><b>Запуск</b><span>Прогрев домена, настройка постмастеров, первые рассылки.</span></li>
+      <li><b>Аналитика</b><span>Ежемесячные отчёты, A/B-тесты и рост показателей.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <h2>Команда</h2>
+    <div class="team__grid">
+      <div class="person"><div class="avatar">СТ</div><b>Стратег</b><span>Отвечает за цели, сегментацию и план коммуникаций</span></div>
+      <div class="person"><div class="avatar">ДЗ</div><b>Дизайнер</b><span>Создаёт шаблоны писем, которые хорошо выглядят везде</span></div>
+      <div class="person"><div class="avatar">КП</div><b>Копирайтер</b><span>Пишет темы и тексты, которые открывают и читают</span></div>
+      <div class="person"><div class="avatar">ДС</div><b>Специалист по доставляемости</b><span>Настраивает DNS-записи, прогрев и мониторинг репутации</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2>Частые вопросы</h2>
+    <details><summary>Сколько стоит работа?</summary><p>Зависит от объёма базы и задач. После бесплатной консультации пришлём смету с фиксированной ценой.</p></details>
+    <details><summary>У нас маленькая база — есть смысл?</summary><p>Да. Даже база в 1 000 контактов при правильной работе даёт заметную выручку, а мы поможем её растить.</p></details>
+    <details><summary>Зачем нужна аутентификация домена?</summary><p>Записи SPF, DKIM и DMARC подтверждают почтовым сервисам, что письма действительно отправлены вами. Без них письма чаще попадают в спам.</p></details>
+    <details><summary>Что такое постмастеры?</summary><p>Это инструменты почтовых сервисов (Google, Mail.ru, Яндекс), которые показывают репутацию домена и долю писем в спаме.</p></details>
+  </div>
+</section>
+
+<section class="lead-form" id="lead">
+  <div class="wrap lead__in">
+    <div>
+      <h2>Запишитесь на бесплатную консультацию</h2>
+      <p>Расскажем, сколько может приносить email-канал именно вашему бизнесу.</p>
+    </div>
+    <form id="leadForm" class="lead__form">
+      <input type="text" name="name" placeholder="Имя" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Телефон">
+      <label class="check"><input type="checkbox" required> Согласен на обработку персональных данных</label>
+      <button class="btn" type="submit">Отправить заявку</button>
+      <p class="lead__ok" id="leadOk" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div><b>Письмо в цель</b><br><span class="muted">Агентство email-маркетинга</span></div>
+    <div class="muted small">Демонстрационный сайт, созданный для тестирования email-сервисов. Компания и кейсы вымышлены.</div>
+    <div class="muted small">© <span id="year"></span></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
