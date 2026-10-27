@@ -160,3 +160,4 @@ section { padding: 80px 0; }
   .nav .btn--sm { display: none; }
   .nav__burger { margin-left: auto; }
 }
+.lead__mail { color: #fff; font-weight: 700; }
